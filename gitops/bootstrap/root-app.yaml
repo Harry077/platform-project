@@ -2,13 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: root
-  namespace: argocd
+  namespace: default
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/harshitsolanki132@gmail.com/platform-project.git
+    repoURL: https://github.com/Harry077/platform-project.git
     targetRevision: main
     path: gitops/apps
   destination:
